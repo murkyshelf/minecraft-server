@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  minecraft-server:
+    build: .
+    container_name: minecraft-fabric-server
+    restart: unless-stopped
+    ports:
+      - "25565:25565"  # Minecraft server port
+      - "25575:25575"  # RCON port (if enabled)
+    volumes:
+      # Persist world data
+      - ./world:/minecraft/world
+      - ./logs:/minecraft/logs
+      - ./config:/minecraft/config
+      # Optional: persist other data
+      - ./banned-ips.json:/minecraft/banned-ips.json
+      - ./banned-players.json:/minecraft/banned-players.json
+      - ./ops.json:/minecraft/ops.json
+      - ./whitelist.json:/minecraft/whitelist.json
+      - ./usercache.json:/minecraft/usercache.json
+    environment:
+      # JVM Memory settings (adjust based on your host system)
+      JAVA_OPTS: "-Xmx4G -Xms2G -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1"
+      # Server configuration
+      EULA: "true"
+    networks:
+      - minecraft-network
+    # Resource limits (adjust based on your system)
+    deploy:
+      resources:
+        limits:
+          memory: 6G
+        reservations:
+          memory: 2G
+
+networks:
+  minecraft-network:
+    driver: bridge

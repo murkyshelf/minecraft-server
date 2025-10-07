@@ -1,0 +1,23 @@
+# Docker ignore file to exclude unnecessary files from the build context
+.git
+.gitignore
+*.md
+README*
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Logs (will be mounted as volumes instead)
+logs/*
+
+# Cache files that can be regenerated
+cache/*
+
+# Development files
+*.log
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/

@@ -120,6 +120,12 @@ globalExecutorParallelism = "default"
 	allowPOIUnloading = "default"
 
 [fixes]
+	# (Default: true) Whether to prevent early client ticks.
+	# 
+	# This avoids the player from falling through the world.
+	# Mitigates https://github.com/CaffeineMC/sodium/issues/3065
+	# 
+	preventEarlyClientMovementTicks = "default"
 	# (Default: true)  
 	#  Whether to disable the shutdown hook of log4j2 on dedicated servers.
 	#  Enabling this also makes the JVM exit when the dedicated server is considered fully shut down.
@@ -127,12 +133,6 @@ globalExecutorParallelism = "default"
 	#  We has historically been doing this, and this config option allows you to disable this behavior.
 	# 
 	disableLoggingShutdownHook = "default"
-	# (Default: true) Whether to prevent early client ticks.
-	# 
-	# This avoids the player from falling through the world.
-	# Mitigates https://github.com/CaffeineMC/sodium/issues/3065
-	# 
-	preventEarlyClientMovementTicks = "default"
 	# (Default: true) Enforces safe world random access.  
 	# This feature detects unsafe off-thread world random access, helping to find the causes  
 	# of mysterious "Accessing LegacyRandomSource from multiple threads" crash.  
@@ -145,6 +145,12 @@ globalExecutorParallelism = "default"
 	enforceSafeWorldRandomAccess = "default"
 
 [vanillaWorldGenOptimizations]
+	# (Default: true) Whether to enable StructureWeightSampler optimizations to accelerate world generation
+	# 
+	optimizeStructureWeightSampler = "default"
+	# (Default: true) Whether to enable aquifer optimizations to accelerate overworld worldgen
+	# (may cause incompatibility with other mods)
+	optimizeAquifer = "default"
 	# (Default: true) Whether to use density function compiler to accelerate world generation
 	# 
 	# Density function: https://minecraft.wiki/w/Density_function
@@ -158,17 +164,11 @@ globalExecutorParallelism = "default"
 	# fall back to the unoptimized version of density functions.
 	# 
 	useDensityFunctionCompiler = "default"
-	# (Default: true) Whether to enable aquifer optimizations to accelerate overworld worldgen
-	# (may cause incompatibility with other mods)
-	optimizeAquifer = "default"
 	# (Default: true) Whether to enable End Biome Cache to accelerate The End worldgen 
 	# This is no longer included in lithium-fabric 
 	# (may cause incompatibility with other mods)
 	# 
 	useEndBiomeCache = "default"
-	# (Default: true) Whether to enable StructureWeightSampler optimizations to accelerate world generation
-	# 
-	optimizeStructureWeightSampler = "default"
 
 [generalOptimizations]
 	# (Default: 100000) The task interval of mid-tick chunk tasks in nanoseconds (-1 to disable)  

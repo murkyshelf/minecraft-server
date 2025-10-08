@@ -1,6 +1,6 @@
-[16:18:51] [main/INFO]: Loading Minecraft 1.21.9 with Fabric Loader 0.17.2
-[16:18:51] [main/INFO]: Dependencies overridden for noisium
-[16:18:51] [main/INFO]: Loading 74 mods:
+[11:46:33] [main/INFO]: Loading Minecraft 1.21.9 with Fabric Loader 0.17.2
+[11:46:33] [main/INFO]: Dependencies overridden for noisium
+[11:46:33] [main/INFO]: Loading 74 mods:
 	- c2me 0.3.5+alpha.0.43+1.21.9
 	   |-- c2me-base 0.3.5+alpha.0.43+1.21.9
 	   |-- c2me-client-uncapvd 0.3.5+alpha.0.43+1.21.9
@@ -84,11 +84,11 @@
 	- scalablelux 0.1.6+fabric.c25518a
 	- vmp 0.2.0+beta.7.212+1.21.9
 	   \-- com_ibm_async_asyncutil 0.1.0
-[16:18:51] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/murky/Downloads/minecraft_server/libraries/net/fabricmc/sponge-mixin/0.16.3+mixin.0.8.7/sponge-mixin-0.16.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
-[16:18:51] [main/INFO]: Compatibility level set to JAVA_16
-[16:18:51] [main/INFO]: Compatibility level set to JAVA_21
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.base.mixin
-[16:18:51] [main/INFO]: Config defaultGlobalExecutorParallelismExpression changed from 
+[11:46:33] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/murky/Downloads/minecraft_server/libraries/net/fabricmc/sponge-mixin/0.16.3+mixin.0.8.7/sponge-mixin-0.16.3+mixin.0.8.7.jar Service=Knot/Fabric Env=SERVER
+[11:46:33] [main/INFO]: Compatibility level set to JAVA_16
+[11:46:33] [main/INFO]: Compatibility level set to JAVA_21
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.base.mixin
+[11:46:33] [main/INFO]: Config defaultGlobalExecutorParallelismExpression changed from 
     max(
         1,
         min(
@@ -100,257 +100,57 @@
         )
     )
   to max(1,min(if(is_client,(cpus/2.66+1),(cpus/1.5)),if(is_j9vm,((mem_gb-(if(is_client,0.5,0.2)))/0.2),((mem_gb-(if(is_client,0.8,0.5)))/0.2))))
-[16:18:51] [main/INFO]: Global Executor Parallelism: 7 configured, 7 evaluated, 2 default evaluated
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.fixes.general.threading_issues.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.notickvd.mixin
-[16:18:51] [main/INFO]: Config noTickViewDistance.maxConcurrentChunkLoads changed from 14 to 2
-[16:18:51] [main/INFO]: Config noTickViewDistance.enableExtRenderDistanceProtocol changed from true to false
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.opts.allocs.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.opts.chunkio.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.opts.dfc.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.opts.math.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.opts.scheduling.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.general.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunk_serializer.mixin
-[16:18:51] [main/INFO]: Config ioSystem.gcFreeChunkSerializer changed from false to true
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunksystem.mixin
-[16:18:51] [main/INFO]: Config chunkSystem.syncPlayerTickets changed from true to false
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunkio.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.server.utils.mixin
-[16:18:51] [main/INFO]: Initializing com.ishland.c2me.threading.lighting.mixin
-[16:18:51] [main/WARN]: Mod 'ferritecore' attempted to override option 'mixin.alloc.blockstate', which doesn't exist, ignoring
-[16:18:51] [main/INFO]: Option 'mixin.entity.collisions.fluid' requires 'mixin.experimental.entity.block_caching.fluid_pushing=false' but found 'true'. Setting 'mixin.entity.collisions.fluid=false'.
-[16:18:51] [main/INFO]: Loaded configuration file for Lithium: 163 options available, 1 override(s) found. Experimental features are enabled!
-[16:18:51] [main/INFO]: Successfully started async appender with [SysOut, ServerGuiConsole, Tracy, File]
-[16:18:51] [main/WARN]: Mixin malte0811.ferritecore.mixin.threaddetec.PalettedContainerMixin is disabled automatically as lithium is installed
-[16:18:51] [main/INFO]: Removing config entry .clientSideConfig.modifyMaxVDConfig.enableExtRenderDistanceProtocol because it is not used
-[16:18:51] [main/INFO]: Removing config entry .clientSideConfig.modifyMaxVDConfig.enabled because it is not used
-[16:18:51] [main/INFO]: Removing config entry .clientSideConfig.modifyMaxVDConfig because it is not used
-[16:18:51] [main/INFO]: Removing config entry .clientSideConfig because it is not used
-[16:18:51] [main/INFO]: Removing config entry .noTickViewDistance.compatibilityMode because it is not used
-[16:18:51] [main/INFO]: Removing config entry .noTickViewDistance.maxViewDistance because it is not used
-[16:18:52] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[16:18:56] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[16:18:56] [main/INFO]: Found new data pack fabric, loading it automatically
-[16:18:56] [main/INFO]: Found new data pack fabric-convention-tags-v2, loading it automatically
-[16:18:57] [main/INFO]: No existing world data, creating new world
-[16:18:57] [main/INFO]: Loaded 1461 recipes
-[16:18:57] [main/INFO]: Loaded 1574 advancements
-[16:18:58] [main/INFO]: Applied 0 biome modifications to 0 of 65 new biomes in 1.040 ms
-[16:18:58] [Server thread/INFO]: Starting minecraft server version 1.21.9
-[16:18:58] [Server thread/INFO]: Loading properties
-[16:18:58] [Server thread/INFO]: Default game type: SURVIVAL
-[16:18:58] [Server thread/INFO]: Generating keypair
-[16:18:58] [Server thread/INFO]: Starting Minecraft server on *:25565
-[16:18:58] [Server thread/INFO]: Using epoll channel type
-[16:18:58] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[16:18:58] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[16:18:58] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[16:18:58] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[16:18:58] [Server thread/INFO]: Preparing level "world"
-[16:18:58] [Server thread/INFO]: Enforcing safe world random access
-[16:18:59] [Server thread/INFO]: [STDOUT]: Density function compilation finished in 225.4 ms
-[16:18:59] [Server thread/INFO]: Using TheSpeedyObjectFactory with Unsafe
-[16:18:59] [Server thread/INFO]: Selecting global world spawn...
-[16:18:59] [Server thread/INFO]: [STDOUT]: [ScalableLux] Lighting scaling is enabled in externally managed mode
-[16:19:00] [Server thread/INFO]: [STDOUT]: Density function compilation finished in 4.838 ms
-[16:19:00] [Server thread/INFO]: [STDOUT]: Density function compilation finished in 4.003 ms
-[16:19:00] [Server thread/INFO]: Loading 0 persistent chunks...
-[16:19:00] [Server thread/INFO]: Preparing spawn area: 100%
-[16:19:00] [Server thread/INFO]: Time elapsed: 1228 ms
-[16:19:00] [Server thread/INFO]: Done (1.874s)! For help, type "help"
-[16:20:00] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[16:32:35] [Server thread/INFO]: bablu[/10.42.0.244:1556] logged in with entity id 17 at (-9.5, 71.0, -9.5)
-[16:32:35] [Server thread/INFO]: bablu joined the game
-[16:34:07] [Server thread/INFO]: anish[/10.42.0.49:57267] logged in with entity id 702 at (-0.5, 72.0, -3.5)
-[16:34:07] [Server thread/INFO]: anish joined the game
-[16:36:57] [Server thread/INFO]: murkyshelf[/127.0.0.1:51686] logged in with entity id 1438 at (-2.5, 72.0, 9.5)
-[16:36:57] [Server thread/INFO]: murkyshelf joined the game
-[16:39:01] [Server thread/INFO]: anish has made the advancement [Stone Age]
-[16:39:34] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[16:39:34] [Server thread/INFO]: murkyshelf left the game
-[16:40:54] [Server thread/INFO]: anish has made the advancement [Getting an Upgrade]
-[16:42:01] [Server thread/INFO]: murkyshelf[/127.0.0.1:55410] logged in with entity id 3155 at (-1.0277970171671746, 74.0, 15.994823135175032)
-[16:42:01] [Server thread/INFO]: murkyshelf joined the game
-[16:42:52] [Server thread/INFO]: bablu lost connection: Disconnected
-[16:42:52] [Server thread/INFO]: bablu left the game
-[16:43:27] [Server thread/INFO]: murkyshelf has made the advancement [Sweet Dreams]
-[16:43:57] [Server thread/INFO]: [Not Secure] <murkyshelf> 235 71 -239
-[16:45:57] [Server thread/INFO]: anish has made the advancement [Sweet Dreams]
-[16:49:30] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[16:49:30] [Server thread/INFO]: murkyshelf left the game
-[16:49:32] [Server thread/INFO]: murkyshelf[/127.0.0.1:54558] logged in with entity id 5599 at (234.5, 71.0, -254.5)
-[16:49:32] [Server thread/INFO]: murkyshelf joined the game
-[16:49:42] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[16:49:42] [Server thread/INFO]: murkyshelf left the game
-[16:49:59] [Server thread/INFO]: murkyshelf[/127.0.0.1:53358] logged in with entity id 5851 at (234.5, 71.0, -254.5)
-[16:49:59] [Server thread/INFO]: murkyshelf joined the game
-[16:50:26] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[16:50:26] [Server thread/INFO]: murkyshelf left the game
-[16:52:13] [Server thread/INFO]: murkyshelf[/127.0.0.1:55064] logged in with entity id 6361 at (234.5, 71.0, -254.5)
-[16:52:13] [Server thread/INFO]: murkyshelf joined the game
-[16:53:39] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[16:53:39] [Server thread/INFO]: murkyshelf left the game
-[16:55:11] [Server thread/INFO]: murkyshelf[/127.0.0.1:50932] logged in with entity id 6888 at (234.5, 71.0, -254.5)
-[16:55:11] [Server thread/INFO]: murkyshelf joined the game
-[16:57:13] [Server thread/INFO]: bablu[/10.42.0.244:5453] logged in with entity id 7327 at (159.30000001192093, 76.0, -135.69862020833048)
-[16:57:13] [Server thread/INFO]: bablu joined the game
-[16:58:41] [Server thread/INFO]: anish has made the advancement [Monster Hunter]
-[16:59:01] [Server thread/INFO]: murkyshelf was slain by Zombie
-[16:59:07] [Server thread/INFO]: bablu was slain by Zombie
-[17:00:23] [Server thread/INFO]: bablu has made the advancement [Monster Hunter]
-[17:00:31] [Server thread/INFO]: Villager class_1646['Nitwit'/1750, l='ServerLevel[world]', x=235.08, y=73.00, z=-222.59] died, message: 'Nitwit was slain by Zombie'
-[17:00:36] [Server thread/INFO]: bablu was slain by Husk
-[17:01:15] [Server thread/INFO]: bablu was slain by Spider
-[17:01:42] [Server thread/INFO]: murkyshelf was slain by Iron Golem
-[17:02:57] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[17:02:57] [Server thread/INFO]: murkyshelf left the game
-[17:02:58] [Server thread/INFO]: bablu was shot by Skeleton
-[17:03:01] [Server thread/INFO]: bablu lost connection: Disconnected
-[17:03:01] [Server thread/INFO]: bablu left the game
-[17:04:27] [Server thread/INFO]: bablu[/10.42.0.244:14430] logged in with entity id 10107 at (98.69999998807907, 59.0, 45.18402100460387)
-[17:04:27] [Server thread/INFO]: bablu joined the game
-[17:05:56] [Server thread/INFO]: anish has made the advancement [A Seedy Place]
-[17:06:41] [Server thread/INFO]: murkyshelf[/127.0.0.1:58306] logged in with entity id 11105 at (260.22840497508236, 70.0, -221.69999998807907)
-[17:06:41] [Server thread/INFO]: murkyshelf joined the game
-[17:12:25] [Server thread/WARN]: Fetching packet for removed entity class_1613['Skeleton'/12288, l='ServerLevel[world]', x=298.50, y=-17.00, z=-324.50, removed=DISCARDED]
-[17:13:09] [Server thread/INFO]: anish lost connection: Disconnected
-[17:13:09] [Server thread/INFO]: anish left the game
-[17:15:59] [Server thread/INFO]: murkyshelf was slain by Zombie
-[17:16:28] [Server thread/INFO]: Villager class_1646['Farmer'/3804, l='ServerLevel[world]', x=265.45, y=67.77, z=-264.54] died, message: 'Farmer was slain by Zombie'
-[17:16:29] [Server thread/INFO]: bablu was shot by Skeleton
-[17:20:11] [Server thread/INFO]: bablu was slain by Spider
-[17:20:19] [Server thread/INFO]: bablu lost connection: Disconnected
-[17:20:19] [Server thread/INFO]: bablu left the game
-[17:26:29] [Server thread/INFO]: murkyshelf was slain by Iron Golem
-[17:26:42] [Server thread/INFO]: murkyshelf was slain by Iron Golem
-[17:27:44] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[17:27:44] [Server thread/INFO]: murkyshelf left the game
-[17:28:44] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[17:36:11] [Server thread/INFO]: murkyshelf[/127.0.0.1:45532] logged in with entity id 16410 at (225.55004459437103, 76.0, -228.260980123595)
-[17:36:11] [Server thread/INFO]: murkyshelf joined the game
-[17:36:27] [Server thread/INFO]: murkyshelf was slain by Iron Golem
-[17:44:26] [Server thread/INFO]: Villager class_1646['Villager'/16747, l='ServerLevel[world]', x=295.30, y=71.00, z=-243.50] died, message: 'Villager was slain by Zombie'
-[17:44:26] [Server thread/INFO]: anish[/10.42.0.49:55863] logged in with entity id 18044 at (332.54709072995047, 63.0, -243.87851866014128)
-[17:44:26] [Server thread/INFO]: anish joined the game
-[17:47:03] [Server thread/INFO]: murkyshelf has made the advancement [Monster Hunter]
-[17:49:46] [Server thread/INFO]: murkyshelf has made the advancement [Acquire Hardware]
-[17:59:21] [Server thread/INFO]: murkyshelf has made the advancement [Isn't It Iron Pick]
-[18:06:44] [Server thread/WARN]: Fetching packet for removed entity class_1548['Creeper'/22326, l='ServerLevel[world]', x=381.50, y=-11.00, z=-301.50, removed=DISCARDED]
-[18:11:47] [Server thread/INFO]: Villager class_1646['Villager'/16662, l='ServerLevel[world]', x=259.29, y=70.00, z=-212.50] died, message: 'Villager was blown up by Creeper'
-[18:18:08] [Server thread/INFO]: murkyshelf has made the advancement [Stone Age]
-[18:22:50] [Server thread/INFO]: No player was found
-[18:28:18] [Server thread/INFO]: Only players may be affected by this command, but the provided selector includes entities
-[18:28:18] [Server thread/INFO]: advancement grant @e everything<--[HERE]
-[18:29:18] [Server thread/INFO]: Incorrect argument for command
-[18:29:18] [Server thread/INFO]: recipe @s<--[HERE]
-[18:29:48] [Server thread/INFO]: No player was found
-[18:30:02] [Server thread/INFO]: Only players may be affected by this command, but the provided selector includes entities
-[18:30:02] [Server thread/INFO]: recipe give @e *<--[HERE]
-[18:30:26] [Server thread/INFO]: Unlocked 1461 recipe(s) for murkyshelf
-[18:30:37] [Server thread/INFO]: Unlocked 1461 recipe(s) for anish
-[18:35:19] [Server thread/INFO]: anish has made the advancement [Acquire Hardware]
-[18:35:21] [Server thread/WARN]: Fetching packet for removed entity class_4466['Bee'/28015, l='ServerLevel[world]', x=385.10, y=67.00, z=-211.18, removed=DISCARDED]
-[18:36:00] [Server thread/WARN]: Fetching packet for removed entity class_4466['Bee'/28014, l='ServerLevel[world]', x=385.07, y=67.00, z=-211.13, removed=DISCARDED]
-[18:45:23] [Server thread/INFO]: bablu[/10.42.0.244:6583] logged in with entity id 30437 at (237.30000001192093, 73.0, -211.2755293720204)
-[18:45:23] [Server thread/INFO]: bablu joined the game
-[18:47:09] [Server thread/WARN]: Fetching packet for removed entity class_1642['Zombie'/31007, l='ServerLevel[world]', x=333.61, y=-19.00, z=-163.59, removed=DISCARDED]
-[18:47:09] [Server thread/INFO]: anish lost connection: Disconnected
-[18:47:09] [Server thread/INFO]: anish left the game
-[18:47:23] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[18:47:23] [Server thread/INFO]: murkyshelf left the game
-[18:47:43] [Server thread/INFO]: murkyshelf[/127.0.0.1:36950] logged in with entity id 31557 at (268.9817684101123, 70.0, -206.61827340558355)
-[18:47:43] [Server thread/INFO]: murkyshelf joined the game
-[18:47:45] [Server thread/INFO]: murkyshelf was slain by Zombie
-[18:47:53] [Server thread/INFO]: anish[/10.42.0.49:49323] logged in with entity id 31678 at (332.69999998807907, 63.0, -240.30871059504187)
-[18:47:53] [Server thread/INFO]: anish joined the game
-[18:48:06] [Server thread/INFO]: bablu was shot by Skeleton
-[18:48:13] [Server thread/INFO]: [Not Secure] <anish> sleeep please
-[18:48:15] [Server thread/INFO]: murkyshelf was slain by Zombie
-[18:48:23] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[18:48:23] [Server thread/INFO]: murkyshelf left the game
-[18:48:30] [Server thread/INFO]: bablu lost connection: Disconnected
-[18:48:30] [Server thread/INFO]: bablu left the game
-[18:48:34] [Server thread/INFO]: murkyshelf[/127.0.0.1:39656] logged in with entity id 32104 at (264.69999998807907, 70.0, -208.61087656198023)
-[18:48:34] [Server thread/INFO]: murkyshelf joined the game
-[18:48:48] [Server thread/INFO]: bablu[/10.42.0.244:6193] logged in with entity id 32263 at (11.616642774797334, 76.0, 7.765123398812509)
-[18:48:48] [Server thread/INFO]: bablu joined the game
-[18:57:59] [Server thread/INFO]: bablu has made the advancement [Stone Age]
-[18:59:01] [Server thread/INFO]: murkyshelf has made the advancement [Getting an Upgrade]
-[18:59:07] [Server thread/INFO]: bablu has made the advancement [Getting an Upgrade]
-[18:59:42] [Server thread/INFO]: bablu has made the advancement [Sweet Dreams]
-[19:06:01] [Server thread/INFO]: murkyshelf was shot by Skeleton
-[19:08:18] [Server thread/WARN]: Fetching packet for removed entity class_1420['Bat'/36386, l='ServerLevel[world]', x=404.48, y=40.00, z=-293.43, removed=DISCARDED]
-[19:08:41] [Server thread/INFO]: murkyshelf tried to swim in lava
-[19:09:26] [Server thread/INFO]: bablu tried to swim in lava
-[19:09:31] [Server thread/INFO]: bablu lost connection: Disconnected
-[19:09:31] [Server thread/INFO]: bablu left the game
-[19:13:03] [Server thread/INFO]: anish has made the advancement [Isn't It Iron Pick]
-[19:16:55] [Server thread/INFO]: murkyshelf has made the advancement [Not Today, Thank You]
-[19:24:07] [Server thread/INFO]: anish has made the advancement [Hot Stuff]
-[19:26:13] [Server thread/INFO]: murkyshelf has made the advancement [Diamonds!]
-[19:26:18] [Server thread/INFO]: anish has made the advancement [Diamonds!]
-[19:31:17] [Server thread/INFO]: bablu[/10.42.0.244:3158] logged in with entity id 40374 at (337.5401969019169, -43.868212629990424, -197.71490247982013)
-[19:31:17] [Server thread/INFO]: bablu joined the game
-[19:33:07] [Server thread/INFO]: bablu has made the advancement [Hot Stuff]
-[19:37:06] [Server thread/WARN]: Fetching packet for removed entity class_1462['Salmon'/40984, l='ServerLevel[world]', x=341.52, y=54.29, z=-293.10, removed=DISCARDED]
-[19:40:42] [Server thread/INFO]: anish lost connection: Disconnected
-[19:40:42] [Server thread/INFO]: anish left the game
-[19:40:46] [Server thread/INFO]: anish[/10.42.0.49:54613] logged in with entity id 42777 at (335.98118099174366, 63.0, -248.05452307520525)
-[19:40:46] [Server thread/INFO]: anish joined the game
-[19:44:03] [Server thread/INFO]: bablu lost connection: Disconnected
-[19:44:03] [Server thread/INFO]: bablu left the game
-[19:48:26] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[19:48:26] [Server thread/INFO]: murkyshelf left the game
-[19:48:26] [Server thread/INFO]: anish lost connection: Disconnected
-[19:48:26] [Server thread/INFO]: anish left the game
-[19:49:26] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[20:21:29] [Server thread/INFO]: murkyshelf[/127.0.0.1:47102] logged in with entity id 45220 at (310.9896106428277, 69.0, -250.33724391224575)
-[20:21:29] [Server thread/INFO]: murkyshelf joined the game
-[20:30:31] [Server thread/INFO]: murkyshelf has made the advancement [What a Deal!]
-[20:37:33] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[20:37:33] [Server thread/INFO]: murkyshelf left the game
-[20:38:33] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[21:01:35] [Server thread/INFO]: murkyshelf[/127.0.0.1:54206] logged in with entity id 48303 at (258.3899175327072, 70.0, -216.42117838767425)
-[21:01:35] [Server thread/INFO]: murkyshelf joined the game
-[21:01:45] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[21:01:45] [Server thread/INFO]: murkyshelf left the game
-[21:02:04] [Server thread/INFO]: murkyshelf[/127.0.0.1:33988] logged in with entity id 48609 at (273.3081377369919, 70.0, -215.70908004143365)
-[21:02:04] [Server thread/INFO]: murkyshelf joined the game
-[21:02:39] [Server thread/INFO]: murkyshelf was slain by Zombie
-[21:13:04] [Server thread/WARN]: Fetching packet for removed entity class_4466['Bee'/51469, l='ServerLevel[world]', x=385.12, y=67.00, z=-211.22, removed=DISCARDED]
-[21:13:11] [Server thread/INFO]: murkyshelf was slain by Iron Golem
-[21:46:37] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[21:46:37] [Server thread/INFO]: murkyshelf left the game
-[21:47:37] [Server thread/INFO]: Server empty for 60 seconds, pausing
-[21:51:23] [Server thread/INFO]: murkyshelf[/127.0.0.1:46524] logged in with entity id 57079 at (263.1851399128332, 70.5625, -210.4205954678765)
-[21:51:23] [Server thread/INFO]: murkyshelf joined the game
-[21:56:13] [Server thread/INFO]: murkyshelf lost connection: Disconnected
-[21:56:13] [Server thread/INFO]: murkyshelf left the game
-[21:56:53] [Server thread/INFO]: Unknown or incomplete command. See below for error
-[21:56:53] [Server thread/INFO]: quit<--[HERE]
-[21:56:58] [Server thread/INFO]: Unknown or incomplete command. See below for error
-[21:56:58] [Server thread/INFO]: exit<--[HERE]
-[21:57:08] [Server thread/INFO]: Stopping server
-[21:57:08] [Server thread/INFO]: Saving players
-[21:57:08] [Server thread/INFO]: Saving worlds
-[21:57:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[21:57:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[21:57:08] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[21:57:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[21:57:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[21:57:08] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[21:57:08] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[21:57:08] [C2ME Storage #3/INFO]: Storage thread Thread[#97,C2ME Storage #3,8,main] stopped
-[21:57:08] [C2ME Storage #2/INFO]: Storage thread Thread[#96,C2ME Storage #2,8,main] stopped
-[21:57:08] [C2ME Storage #1/INFO]: Storage thread Thread[#95,C2ME Storage #1,8,main] stopped
-[21:57:08] [C2ME Storage #6/INFO]: Storage thread Thread[#119,C2ME Storage #6,8,main] stopped
-[21:57:08] [C2ME Storage #5/INFO]: Storage thread Thread[#118,C2ME Storage #5,8,main] stopped
-[21:57:08] [C2ME Storage #4/INFO]: Storage thread Thread[#117,C2ME Storage #4,8,main] stopped
-[21:57:08] [C2ME Storage #8/INFO]: Storage thread Thread[#121,C2ME Storage #8,8,main] stopped
-[21:57:08] [C2ME Storage #9/INFO]: Storage thread Thread[#122,C2ME Storage #9,8,main] stopped
-[21:57:08] [C2ME Storage #7/INFO]: Storage thread Thread[#120,C2ME Storage #7,8,main] stopped
+[11:46:33] [main/INFO]: Global Executor Parallelism: 7 configured, 7 evaluated, 2 default evaluated
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.fixes.chunkio.threading_issues.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.fixes.general.threading_issues.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.threading_issues.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.fixes.worldgen.vanilla_bugs.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.notickvd.mixin
+[11:46:33] [main/INFO]: Config noTickViewDistance.maxConcurrentChunkLoads changed from 14 to 2
+[11:46:33] [main/INFO]: Config noTickViewDistance.enableExtRenderDistanceProtocol changed from true to false
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.opts.allocs.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.opts.chunkio.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.opts.dfc.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.opts.math.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.opts.scheduling.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.general.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.opts.worldgen.vanilla.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunk_serializer.mixin
+[11:46:33] [main/INFO]: Config ioSystem.gcFreeChunkSerializer changed from false to true
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunksystem.mixin
+[11:46:33] [main/INFO]: Config chunkSystem.syncPlayerTickets changed from true to false
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.rewrites.chunkio.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.server.utils.mixin
+[11:46:33] [main/INFO]: Initializing com.ishland.c2me.threading.lighting.mixin
+[11:46:33] [main/WARN]: Mod 'ferritecore' attempted to override option 'mixin.alloc.blockstate', which doesn't exist, ignoring
+[11:46:33] [main/INFO]: Option 'mixin.entity.collisions.fluid' requires 'mixin.experimental.entity.block_caching.fluid_pushing=false' but found 'true'. Setting 'mixin.entity.collisions.fluid=false'.
+[11:46:33] [main/INFO]: Loaded configuration file for Lithium: 163 options available, 1 override(s) found. Experimental features are enabled!
+[11:46:33] [main/INFO]: Successfully started async appender with [SysOut, ServerGuiConsole, Tracy, File]
+[11:46:34] [main/WARN]: Mixin malte0811.ferritecore.mixin.threaddetec.PalettedContainerMixin is disabled automatically as lithium is installed
+[11:46:34] [main/INFO]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[11:46:39] [main/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[11:46:40] [main/INFO]: Loaded 1461 recipes
+[11:46:40] [main/INFO]: Loaded 1574 advancements
+[11:46:40] [main/INFO]: Applied 0 biome modifications to 0 of 65 new biomes in 915.1 μs
+[11:46:41] [Server thread/INFO]: Starting minecraft server version 1.21.9
+[11:46:41] [Server thread/INFO]: Loading properties
+[11:46:41] [Server thread/INFO]: Default game type: SURVIVAL
+[11:46:41] [Server thread/INFO]: Generating keypair
+[11:46:41] [Server thread/INFO]: Starting Minecraft server on *:25565
+[11:46:41] [Server thread/INFO]: Using epoll channel type
+[11:46:41] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[11:46:41] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[11:46:41] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[11:46:41] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[11:46:41] [Server thread/INFO]: Preparing level "world"
+[11:46:41] [Server thread/INFO]: Enforcing safe world random access
+[11:46:41] [Server thread/INFO]: [STDOUT]: Density function compilation finished in 221.7 ms
+[11:46:41] [Server thread/INFO]: Using TheSpeedyObjectFactory with Unsafe
+[11:46:41] [Server thread/INFO]: [STDOUT]: Density function compilation finished in 9.027 ms
+[11:46:41] [Server thread/INFO]: [STDOUT]: Density function compilation finished in 12.64 ms
+[11:46:41] [Server thread/INFO]: Loading 0 persistent chunks...
+[11:46:42] [Server thread/INFO]: Preparing spawn area: 100%
+[11:46:42] [Server thread/INFO]: [STDOUT]: [ScalableLux] Lighting scaling is enabled in externally managed mode
+[11:46:42] [Server thread/INFO]: Time elapsed: 111 ms
+[11:46:42] [Server thread/INFO]: Done (0.908s)! For help, type "help"
+[11:47:42] [Server thread/INFO]: Server empty for 60 seconds, pausing

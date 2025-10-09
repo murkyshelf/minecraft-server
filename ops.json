@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "uuid": "cf706cc1-4fe0-3131-a36a-ceb75abe7f4b",
+    "name": "murkyshelf",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "1e3481cb-82da-3ae4-9513-061ec8a00e1b",
+    "name": "anish",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

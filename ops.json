@@ -10,5 +10,11 @@
     "name": "anish",
     "level": 4,
     "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "133b7419-35aa-3c76-a6e4-d809015d3701",
+    "name": "civilreacher",
+    "level": 4,
+    "bypassesPlayerLimit": false
   }
 ]
